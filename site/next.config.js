@@ -1,5 +1,6 @@
+const basePath = process.env.NODE_ENV === 'development' ? '' :'/ah_reg/1.0';
 /** @type {import('next').NextConfig} */
-console.log(process.env.NODE_ENV);
+console.log("Build base path:", basePath);
 const nextConfig = {
   env: {
     name: 'AlienHub',
@@ -10,7 +11,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
-  basePath: process.env.NODE_ENV === 'development' ? '' :'/ah_reg/1.0',
+  basePath,
   trailingSlash: true,
   images: {
     unoptimized: true,
