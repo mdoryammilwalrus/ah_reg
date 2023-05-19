@@ -15,8 +15,8 @@ jobs:
 
       - name: Build # Have to run processing first so the list.json exists to be included in the the deploy
         run: |
-          npm ci --prefix processing 
-          npm ci --prefix site
+          yarn install --frozen-lockfile --cwd processing 
+          yarn install --frozen-lockfile --cwd site
           ./build_all_branches.sh
 
       - name: Deploy
