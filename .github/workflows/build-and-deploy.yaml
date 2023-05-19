@@ -26,8 +26,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build # Have to run processing first so the list.json exists to be included in the the deploy
         run: |
-          yarn install --frozen-lockfile --cwd processing 
-          yarn install --frozen-lockfile --cwd site
+          yarn --cwd ./processing install --frozen-lockfile
+          yarn --cwd ./site install --frozen-lockfile
           ./build_all_branches.sh
 
       - name: Upload artifact
