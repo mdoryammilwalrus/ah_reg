@@ -35,7 +35,9 @@ jobs:
         with:
           path: public
       - name: debug
-        run: ls -a
+        run: |
+          ls -a
+          ls public -a
           
   deploy:
     environment:
