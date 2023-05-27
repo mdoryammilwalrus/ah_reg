@@ -1,13 +1,12 @@
 {
   "friendly_name": "Minecraft Java",
-  "image_src": "minecraft-java.png",
+  "image_src": "minecraft-launcher.svg",
   "description": "Minecraft is a sandbox game developed by Mojang Studios.",
-  "name": "minecraft",
+  "name": "ah-minecraft-launcher:latest",
   "cores": 2,
   "memory": 2768,
   "gpu_count": 0,
   "cpu_allocation_method": "Inherit",
-  "docker_registry": "https://index.docker.io/v1/",
   "categories": [
     "Games"
   ],
