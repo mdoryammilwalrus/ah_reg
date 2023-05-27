@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Workspace from '../components/Workspace'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ searchText }) {
 
   const [workspaces, setWorkspaces] = useState(null)
+  const router = useRouter()
 
   useEffect(() => {
     fetch('list.json')
@@ -35,7 +37,7 @@ export default function Home({ searchText }) {
       <Head>
         <title>Kasm Workspaces</title>
         <meta name="description" content="List of workspaces for Kasm Webspaces" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={`${router.basePath}/favicon.png`} />
       </Head>
 
 
