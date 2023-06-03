@@ -1,0 +1,21 @@
+{
+  "friendly_name": "Ubuntu Jammy GNOME",
+  "image_src": "ubuntu.png",
+  "description": "Ubuntu is a Linux distribution based on Debian.",
+  "name": "ah-desktop-gnome:latest",
+  "cores": 2,
+  "memory": 4096,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "categories": [
+    "Desktop",
+    "Productivity",
+    "Development"
+  ],
+  "require_gpu": false,
+  "enabled": true,
+  "image_type": "Container",
+  "architecture": [
+    "amd64"
+  ]
+}

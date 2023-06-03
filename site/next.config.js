@@ -7,7 +7,7 @@ const nextConfig = {
     description: 'AlienHub Images',
     icon: '/img/logo.svg',
     listUrl: 'https://mdoryammilwalrus.github.io/ah_reg/',
-    contactUrl: 'https://kasmweb.com/support',
+    contactUrl: 'https://example.com',
   },
   reactStrictMode: true,
   swcMinify: true,
